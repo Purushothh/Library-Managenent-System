@@ -1,0 +1,33 @@
+/* navigation bar top*/
+#navbar ul {
+
+  padding: 10px;
+  text-align:center;
+  list-style-type: none;
+  background-color: #2F4F4F;
+  margin: 10px;
+  height:40px;
+  border-radius: 5px;
+}
+
+#navbar ul li  {
+
+  display: inline;
+  position: center;
+  right: 430px;
+}
+
+#navbar ul li a  {
+
+  text-decoration:none;
+  font-family:Arial;
+  padding: .2em 1em;
+  color:#efff;
+  background-color:#2F4F4F;
+}
+
+#navbar ul li a:hover  {
+  border-radius:5px;
+  color: #000;
+  background-color: #fff;
+}

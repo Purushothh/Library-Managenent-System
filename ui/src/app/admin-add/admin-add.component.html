@@ -1,0 +1,40 @@
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <form [formGroup]="form" (ngSubmit)="onAction()">
+
+    <label>ISBN Number:</label>
+    <input type="text" name="number" formControlName="number" required>
+
+
+    <label>Title :</label>
+    <input type="text" name="title" formControlName="title" required>
+
+    <label>Sector :</label>
+    <input type="text" name="itemSector" formControlName="itemSector" required>
+
+
+    <label>Published Date :</label>
+    <input type="text" name="itemPbdDate" formControlName="itemPbDate" required>
+
+    <label>Author :</label>
+    <input type="text" name="itemAuthor" formControlName="Author" required>
+
+    <label>Publisher :</label>
+    <input type="text" name="itemPublisher" formControlName="Publisher" required>
+
+
+    <label>No.of.Pages :</label>
+    <input type="text" name="itemPages" formControlName="itemPages" required>
+
+
+    <button type="submit" name="button" class="btn">Add Item</button>
+    <div class="Json">{{name}}</div>
+
+  </form>
+</div>
+
+
+
+
+
+

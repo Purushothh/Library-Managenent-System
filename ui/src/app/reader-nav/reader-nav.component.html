@@ -1,0 +1,21 @@
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <form #frm="ngForm">
+
+    <label for="name"> Reader Name:</label>
+    <input type="text" name="name" ngModel #nameUser="ngModel" required pattern="">
+    <div *ngIf="nameUser.errors?.required">
+      Reader Name is required
+    </div>
+
+    <label for="Password">Password:</label>
+    <input type="text" name="Password" ngModel #PasswordUser="ngModel"required >
+    <div *ngIf="PasswordUser.errors?.required">
+      Password is required
+    </div>
+
+
+    <button tyep="submit" name="button" class="btn" [disabled]="frm.invalid " routerLink="/reader" >Login</button>
+
+  </form>
+</div>

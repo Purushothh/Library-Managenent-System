@@ -1,0 +1,22 @@
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <form #frm="ngForm">
+
+    <label >
+      Type of Item :
+    </label>
+    <input type="text" name="name" ngModel #nameUser="ngModel" required pattern="">
+    <div *ngIf="nameUser.errors?.required">
+      Item catagory required!
+    </div>
+
+    <label >
+
+    </label>
+    <input type="text" name="Password" ngModel #PasswordUser="ngModel"required >
+
+
+    <button type="submit" name="button" class="btn" [disabled]="frm.invalid " routerLink="/adminGenerate" >Generate report</button>
+
+  </form>
+</div>

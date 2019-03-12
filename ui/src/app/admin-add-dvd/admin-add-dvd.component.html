@@ -1,0 +1,45 @@
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <form [formGroup]="form" (ngSubmit)="onActionAddDVD()">
+
+
+    <input type="text" name="number" placeholder="ISBN Number:" formControlName="number" required>
+     <br>
+
+    <input type="text" name="title" placeholder="Title :" formControlName="title" required>
+    <br>
+
+
+    <input type="text" name="itemSector" placeholder="Sector :" formControlName="itemSector" required>
+    <br>
+
+
+    <input type="text" name="languages" placeholder="Available Language :" formControlName="languages" required>
+    <br>
+
+    <input type="text" name="subtitles" placeholder="Available Subtitles :" formControlName="subtitles" required>
+    <br>
+
+
+    <input type="text" name="itemPbdDate" placeholder="Published Date :" formControlName="itemPbDate" required>
+    <br>
+
+
+    <input type="text" name="Producer" placeholder="Producer :" formControlName="Producer" required>
+    <br>
+
+
+    <input type="text" name="Actor" placeholder="Actor :" formControlName="Actor" required>
+    <br>
+
+    <button tyep="submit" name="button" class="btn">Add DVD</button>
+
+    <div class="Json">{{name}}}</div>
+  </form>
+</div>
+
+
+
+
+
+

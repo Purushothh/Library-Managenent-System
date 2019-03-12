@@ -1,0 +1,37 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Serve index page from public directory
+GET         /                           controllers.FrontendController.index()
+
+# An example route (Prefix all API routes with apiPrefix defined in application.conf)
+GET         /api/summary                controllers.HomeController.appSummary
+
+# Serve static assets under public directory
+GET         /*file                      controllers.FrontendController.assetOrDefault(file)
+
+# TestAdd post request
+POST        /api/postTest               controllers.HomeController.postTest()
+#
++nocsrf
+POST        /api/onclick                controllers.HomeController.TestAdd()
+
++nocsrf
+POST        /api/onclickReader                controllers.HomeController.TestAddReader()
+
+
++nocsrf
+POST        /api/onclickDVD                   controllers.HomeController.TestDVD()
+
++nocsrf
+POST        /api/onclickDelete                controllers.HomeController.TestDelete()
+
++nocsrf
+POST        /api/onActionDisplay              controllers.HomeController.TestDisplay()
+
++nocsrf
+POST        /api/onActionBorrow               controllers.HomeController.TestBorrow()
+
++nocsrf
+POST        /api/onReturn                     controllers.HomeController.TestReturn()

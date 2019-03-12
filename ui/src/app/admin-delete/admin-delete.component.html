@@ -1,0 +1,15 @@
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <form [formGroup]="form" (ngSubmit)="onActionDelete()">
+
+
+    <label>ISBN Number:</label>
+    <input type="text" name="number" formControlName="number" required>
+
+
+    <button type="submit" name="button" class="btn">Delete Item</button>
+
+    <div class="Json">{{name}}</div>
+
+  </form>
+</div>

@@ -1,0 +1,20 @@
+
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <form #frm="ngForm">
+
+    <h2>Login</h2>
+    <label > Name: </label>
+    <input type="text" name="name" placeholder="Name..." ngModel #nameUser="ngModel" required pattern="">
+
+
+    <label >
+      Password:
+    </label>
+    <input type="text" name="Password" placeholder="Name..." ngModel #PasswordUser="ngModel"required >
+
+
+    <button tyep="submit" name="button" class="btn" [disabled]="frm.invalid " routerLink="/admin">Login</button>
+
+  </form>
+</div>

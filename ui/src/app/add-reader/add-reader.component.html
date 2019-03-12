@@ -1,0 +1,32 @@
+<script src="../admin-add/admin-add.component.ts"></script>
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <form [formGroup]="form" (ngSubmit)="onActionReader()">
+
+    <label>Reader ID:</label>
+    <input type="text" name="RID" formControlName="RID" required>
+
+
+    <label>Name :</label>
+    <input type="text" name="readerName" formControlName="readerName" required>
+
+    <label>Mobile Number :</label>
+    <input type="text" name="TelNo" formControlName="TelNo" required>
+
+
+    <label>Email :</label>
+    <input type="text" name="Email" formControlName="Email" required>
+
+
+    <button type="submit" name="button" class="btn">Add Reader</button>
+    <div class="Json">{{name}}</div>
+
+
+  </form>
+</div>
+
+
+
+
+
+

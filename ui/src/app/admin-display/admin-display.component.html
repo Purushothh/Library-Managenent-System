@@ -1,0 +1,12 @@
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <form [formGroup]="form" (ngSubmit)="onActionDisplay()">
+
+    <label >Do you want to display items!</label>
+    <input type="text" name="name"  formControlName="number" required >
+
+
+    <button tyep="submit" name="button" class="btn"  >Display Item</button>
+
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <form [formGroup] = "form" (ngSubmit) = "onReturn()">
+
+    <label >ISBN Number:</label>
+    <input type="text" name="isbn" formControlName="isbn" required >
+
+    <label >Returned Date:</label>
+    <input type="text" name="returnDate" formControlName="returnDate" required >
+
+    <button type="submit" name="button" class="btn" >Return Item</button>
+    <p>{{itemDetails}}</p>
+    <p style="color: #FFFFFF">{{fineDetails}}</p>
+
+  </form>
+</div>

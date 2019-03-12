@@ -1,0 +1,28 @@
+<div class="login">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+  <form [formGroup]="form" (ngSubmit)="onActionBorrow()">
+
+
+    <label >ISBN Number:</label>
+    <input type="text" name="number" formControlName="number" required >
+
+    <label >ReaderId:</label>
+    <input type="text" name="ReaderId" formControlName="ReaderId" required >
+
+    <label >BorrowDate:</label>
+    <input type="text" name="BDate" formControlName="BDate" required >
+
+    <label >BorrowTime:</label>
+    <input type="text" name="BTime" formControlName="BTime" required >
+
+    <!---->
+    <!--<label >ReturnDate:</label>-->
+    <!--<input type="text" name="RTime" formControlName="RTime" required >-->
+
+
+    <button tyep="submit" name="button" class="btn" >Borrow Item</button>
+    <p class="Json">{{availableStatus}}</p>
+
+  </form>
+</div>
